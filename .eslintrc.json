@@ -1,6 +1,23 @@
 {
-  "extends": "./lib/index.js",
-  "parserOptions": {
-    "createDefaultProgram": true
-  }
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:eslint-comments/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": [
+        "@typescript-eslint",
+        "txo-typescript"
+      ],
+      "rules": {
+        "txo-typescript/correct-log-path": "error"
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": true
+        }
+      }
+    }
+  ]
 }
