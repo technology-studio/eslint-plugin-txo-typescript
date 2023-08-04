@@ -23,7 +23,7 @@
     "prepare": "husky install && yarn compile",
     "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "yarn lint"
+    "test": "yarn compile && cp -r lib node_modules/eslint-plugin-txo-typescript/ && yarn lint"
   },
   "engines": {
     "node": ">=18.0.0"
