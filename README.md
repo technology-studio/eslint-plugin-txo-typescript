@@ -1,3 +1,3 @@
-# Eslint typescript config#
+# Eslint typescript plugin#
 
-Eslint typescript config
+Eslint typescript plugin

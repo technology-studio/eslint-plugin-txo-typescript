@@ -25,6 +25,9 @@
     "semantic-release": "semantic-release",
     "test": "yarn lint"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
