@@ -23,7 +23,7 @@
     "prepare": "husky install && yarn compile",
     "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "yarn compile && yarn lint"
+    "test": "yarn lint"
   },
   "dependencies": {},
   "devDependencies": {
