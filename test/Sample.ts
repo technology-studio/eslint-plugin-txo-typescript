@@ -6,8 +6,7 @@
 
 import { Log } from './LogMock'
 
-// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars, txo-typescript/correct-log-path
-const logWrong = new Log('test.aaaa')
+// eslint-disable-next-line @txo/typescript/correct-log-path
+export const logWrong = new Log('test.aaaa')
 
-// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
-const logCorrect = new Log('eslint-plugin-txo-typescript.test.Sample')
+export const logCorrect = new Log('@txo.eslint-plugin-typescript.test.Sample')
