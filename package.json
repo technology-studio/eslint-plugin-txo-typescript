@@ -44,7 +44,7 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "husky": "^8.0.3",
     "npm-check-updates": "^16.14.4",
-    "semantic-release": "^22.0.4",
+    "semantic-release": "^22.0.5",
     "semantic-release-slack-bot": "^4.0.2",
     "typescript": "^5.2.2"
   },
