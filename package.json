@@ -15,7 +15,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
+    "lint": "yarn compile && cp -r lib node_modules/@txo/eslint-plugin-typescript/ && eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
@@ -23,7 +23,7 @@
     "prepare": "husky install && yarn compile",
     "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "yarn compile && cp -r lib node_modules/@txo/eslint-plugin-typescript/ && yarn lint"
+    "test": "yarn lint"
   },
   "engines": {
     "node": ">=18.0.0"
