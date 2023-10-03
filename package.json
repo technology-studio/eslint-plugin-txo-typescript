@@ -20,10 +20,11 @@
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
     "compile": "tsc",
+    "noop": ":",
     "prepare": "husky install && yarn compile",
     "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "yarn lint"
+    "test": "yarn lint && yarn noop"
   },
   "engines": {
     "node": ">=18.0.0"
