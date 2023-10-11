@@ -47,10 +47,5 @@
     "semantic-release": "^22.0.5",
     "semantic-release-slack-bot": "^4.0.2",
     "typescript": "^5.2.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
