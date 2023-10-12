@@ -31,11 +31,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
+    "@txo/commitlint": "^1.0.0",
     "@txo/eslint-plugin-typescript": "file:.",
+    "@txo/semantic-release": "^1.0.0",
     "@types/eslint": "^8.44.3",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
@@ -44,8 +42,6 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "husky": "^8.0.3",
     "npm-check-updates": "^16.14.4",
-    "semantic-release": "^22.0.5",
-    "semantic-release-slack-bot": "^4.0.2",
     "typescript": "^5.2.2"
   }
 }
