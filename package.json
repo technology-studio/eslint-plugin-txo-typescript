@@ -34,7 +34,7 @@
     "@txo/commitlint": "^1.0.1",
     "@txo/eslint-plugin-typescript": "file:.",
     "@txo/semantic-release": "^1.0.0",
-    "@types/eslint": "^8.44.3",
+    "@types/eslint": "^8.44.5",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint": "^8.50.0",
