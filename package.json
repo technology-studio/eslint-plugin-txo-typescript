@@ -15,14 +15,14 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "yarn compile && cp -r lib node_modules/@txo/eslint-plugin-typescript/",
+    "build": "yarn compile && mkdir -p node_modules/@txo/eslint-plugin-typescript/lib && cp -r lib/* node_modules/@txo/eslint-plugin-typescript/lib && cp package.json node_modules/@txo/eslint-plugin-typescript/",
     "lint": "yarn build && eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
     "compile": "tsc",
     "prepare": "husky install && yarn build",
-    "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
+    "sanity": "yarn lint && yarn test && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
     "test": "jest"
   },
@@ -32,7 +32,6 @@
   "dependencies": {},
   "devDependencies": {
     "@txo/commitlint": "^1.0.1",
-    "@txo/eslint-plugin-typescript": "file:.",
     "@txo/semantic-release": "^1.0.0",
     "@types/eslint": "^8.44.6",
     "@types/jest": "^29.5.6",
