@@ -15,8 +15,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "yarn compile && mkdir -p node_modules/@txo/eslint-plugin-typescript/lib && cp -r lib/* node_modules/@txo/eslint-plugin-typescript/lib && cp package.json node_modules/@txo/eslint-plugin-typescript/",
-    "lint": "yarn build && eslint --max-warnings 0 .",
+    "build": "yarn compile",
+    "lint": "eslint --max-warnings 0 .",
     "fixcode": "eslint . --fix",
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",

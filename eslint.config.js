@@ -1,5 +1,5 @@
 const txoConfig = require('eslint-config-txo-typescript')
-const txoPlugin = require('@txo/eslint-plugin-typescript')
+const txoPlugin = require('./lib')
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 const config = [
