@@ -1,16 +1,16 @@
 {
+  "extends": "./tsconfig-base.json",
   "compilerOptions": {
-    "lib": ["esnext"],
-    "strict": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "sourceMap": true,
-    "outDir": "lib"
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "paths": {}
   },
   "include": [
-    "src/**/*"
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

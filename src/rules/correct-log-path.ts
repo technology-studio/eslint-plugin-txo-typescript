@@ -7,12 +7,12 @@
 import {
   sep,
   relative,
+  resolve,
 } from 'path'
 import { type Rule } from 'eslint'
 import { readFileSync } from 'fs'
-import { resolve } from 'path'
 
-const packageJson = JSON.parse(readFileSync(resolve(process.cwd(), 'package.json'), 'utf8'))
+const packageJson = JSON.parse(readFileSync(resolve(process.cwd(), 'package.json'), 'utf8')) as { name?: string }
 
 const logPathRule: Rule.RuleModule = {
   meta: {
@@ -27,7 +27,7 @@ const logPathRule: Rule.RuleModule = {
       NewExpression (node): void {
         if (node.callee.type === 'Identifier' && node.callee.name === 'Log') {
           const relativePath = relative(process.cwd(), context.filename)
-          const packageName = packageJson.name as string | undefined
+          const packageName = packageJson.name
           let logPath = relativePath.replace(/\.[^/.]+$/, '')
           if (packageName != null && packageName !== 'MobileApp') {
             logPath = `${packageName.replace('/', '.')}.${logPath}`
