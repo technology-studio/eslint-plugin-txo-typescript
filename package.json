@@ -32,7 +32,7 @@
   "dependencies": {},
   "devDependencies": {
     "@txo/commitlint": "^1.0.10",
-    "@txo/semantic-release": "^1.0.7",
+    "@txo/semantic-release": "^1.0.8",
     "@txo/tsconfig": "^1.1.1",
     "@types/eslint": "^8.56.1",
     "@types/jest": "^29.5.11",
