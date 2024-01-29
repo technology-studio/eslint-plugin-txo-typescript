@@ -21,7 +21,7 @@
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
     "compile": "tsc",
-    "prepare": "husky install && yarn build",
+    "prepare": "husky && yarn build",
     "sanity": "yarn lint && yarn test --coverage && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
