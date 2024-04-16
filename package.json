@@ -21,7 +21,7 @@
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
     "compile": "tsc",
-    "prepare": "husky install && yarn build",
+    "prepare": "husky && yarn build",
     "sanity": "yarn lint && yarn test --coverage && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
@@ -37,7 +37,7 @@
     "@types/eslint": "^8.56.9",
     "@types/jest": "^29.5.12",
     "eslint-config-txo-typescript": "^4.0.53",
-    "husky": "^8.0.3",
+    "husky": "^9.0.11",
     "jest": "^29.7.0",
     "npm-check-updates": "^16.14.18",
     "ts-jest": "^29.1.2",
