@@ -34,7 +34,7 @@
     "@txo/commitlint": "^1.0.14",
     "@txo/semantic-release": "^1.0.8",
     "@txo/tsconfig": "^1.1.1",
-    "@types/eslint": "^8.56.9",
+    "@types/eslint": "^8.56.10",
     "@types/jest": "^29.5.12",
     "eslint-config-txo-typescript": "^4.0.53",
     "husky": "^9.0.11",
