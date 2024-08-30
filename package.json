@@ -32,10 +32,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@txo/commitlint": "^1.0.16",
+    "@txo/commitlint": "^1.0.17",
     "@txo/semantic-release": "^2.0.8",
     "@txo/tsconfig": "^1.1.1",
-    "@types/eslint": "^8.56.11",
+    "@types/eslint": "^8.56.12",
     "@types/jest": "^29.5.12",
     "eslint-config-txo-typescript": "^4.0.66",
     "husky": "^9.1.5",
