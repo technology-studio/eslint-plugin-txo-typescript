@@ -25,7 +25,8 @@
     "sanity": "yarn lint:ci && yarn test --coverage && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "lint:ci": "yarn lint"
+    "lint:ci": "yarn lint",
+    "type-check": "tsc --noEmit"
   },
   "engines": {
     "node": ">=18.0.0"
