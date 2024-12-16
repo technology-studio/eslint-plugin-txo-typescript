@@ -33,7 +33,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@txo/commitlint": "^1.0.20",
+    "@txo/commitlint": "^1.0.21",
     "@txo/semantic-release": "^2.0.10",
     "@txo/tsconfig-cjs": "^2.0.0",
     "@types/eslint": "^8.56.12",
