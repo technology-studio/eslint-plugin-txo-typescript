@@ -4,10 +4,8 @@
  * @Copyright: Technology Studio
 **/
 
-const commitlintConfig = {
+export default {
   extends: [
     '@txo/commitlint',
   ],
 }
-
-module.exports = commitlintConfig

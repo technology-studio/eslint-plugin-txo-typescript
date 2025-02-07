@@ -6,7 +6,7 @@
 
 export class Log {
   logPath: string
-  constructor (logPath: string) {
+  constructor(logPath: string) {
     this.logPath = logPath
   }
 }

@@ -1,14 +1,12 @@
 {
-  "extends": "./tsconfig-base.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "noEmit": false,
     "declaration": true,
-    "outDir": "./lib",
-    "rootDir": "./src",
-    "paths": {}
+    "outDir": "./lib"
   },
   "include": [
-    "src"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
