@@ -1,6 +1,13 @@
 {
-  "extends": "../tsconfig-base.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
+    "paths": {
+      "Config/*": [ "./__tests__/Config/*" ],
+      "Data/*": [ "./__tests__/Data/*" ],
+      "Utils/*": [ "./__tests__/Utils/*" ],
+      "src": [ "./src" ],
+      "src/*": [ "./src/*" ]
+    }
   },
   "include": [
     "./**/*.ts"
