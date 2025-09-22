@@ -43,7 +43,7 @@
     "husky": "^9.1.7",
     "jest": "^29.7.0",
     "npm-check-updates": "^18.2.1",
-    "ts-jest": "^29.4.3",
+    "ts-jest": "^29.4.4",
     "typescript": "^5.9.2"
   }
 }
