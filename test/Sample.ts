@@ -6,7 +6,7 @@
 
 import { Log } from './LogMock'
 
-// eslint-disable-next-line @txo/typescript/correct-log-path
+// eslint-disable-next-line @txo/typescript/correct-log-path -- this should fail
 export const logWrong = new Log('test.aaaa')
 
 export const logCorrect = new Log('@txo.eslint-plugin-typescript.test.Sample')
