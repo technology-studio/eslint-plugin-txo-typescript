@@ -4,7 +4,7 @@
  * @Copyright: Technology Studio
 **/
 
-module.exports = {
+export default {
   extends: [
     '@txo/semantic-release',
   ],
