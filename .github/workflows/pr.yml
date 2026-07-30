@@ -13,5 +13,5 @@ permissions:
 jobs:
   semantic-title:
     name: 'Semantic title'
-    uses: technology-studio/github-workflows/.github/workflows/_semantic-title.yml@696ee6d68a8fdb357c5a6e26e748fba32f09a9bb # main
+    uses: technology-studio/github-workflows/.github/workflows/_semantic-title.yml@98774916572d196a1ac57f0ec578395c6b3573e5 # main
     secrets: inherit
