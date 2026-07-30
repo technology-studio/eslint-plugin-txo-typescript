@@ -1,6 +1,6 @@
 {
   "name": "@txo/eslint-plugin-typescript",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "Technology Studio - Eslint typescript plugin",
   "main": "lib/index.js",
   "repository": {
